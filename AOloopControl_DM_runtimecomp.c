@@ -8,7 +8,7 @@
  * @date    10 Jul 2017
  *
  *
- * 
+ *This is an OS X Sierra compatible version  - TC, 03/23/2018 
  */
 
 #include <malloc.h>
@@ -27,7 +27,7 @@
 #include "AOloopControl_DM/AOloopControl_DM.h"
 
 
-#ifdef __MACH__
+/*#ifdef __MACH__
 #include <mach/mach_time.h>
 #define CLOCK_REALTIME 0
 #define CLOCK_MONOTONIC 0
@@ -42,9 +42,9 @@ int clock_gettime(int clk_id, struct mach_timespec *t){
     t->tv_nsec = nseconds;
     return 0;
 }
-#else
+#else*/
 #include <time.h>
-#endif
+//#endif
 
 
 
